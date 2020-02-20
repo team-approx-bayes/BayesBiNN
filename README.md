@@ -4,7 +4,7 @@ Code for "Training Binary Neural Networks using the Bayesian Learning Rule".
 
 synthetic_data.ipynb
 
-2. Real Image classification
+2. Image classification
 
  BayesBiNN method: 
  
