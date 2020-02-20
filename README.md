@@ -1,8 +1,8 @@
-
 Code for "Training Binary Neural Networks using the Bayesian Learning Rule".
 
 1. Synthetic data
-Run synthetic_data.ipynb
+
+synthetic_data.ipynb
 
 2. Real Image classification
 
