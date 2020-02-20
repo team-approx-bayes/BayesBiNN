@@ -1,5 +1,5 @@
 
-Code for ICML2020-ID6594 manuscript "Training Binary Neural Networks using the Bayesian Learning Rule".
+Code for "Training Binary Neural Networks using the Bayesian Learning Rule".
 
 1. Synthetic data
 Run synthetic_data.ipynb
