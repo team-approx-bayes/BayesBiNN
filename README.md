@@ -7,6 +7,7 @@ Run synthetic_data.ipynb
 2. Real Image classification
 
  BayesBiNN method: 
+ 
  MNIST: python main_mnist.py --model MLPBinaryConnect --optim BayesBiNN
  
  Cifar10: python main_cifar10.py --model MLPBinaryConnect --optim BayesBiNN
@@ -14,6 +15,7 @@ Run synthetic_data.ipynb
  Cifar100: python main_cifar100.py --model MLPBinaryConnect --optim BayesBiNN
  
  STE-Adam method: 
+ 
  MNIST: python main_mnist.py --model MLPBinaryConnect_STE --optim STE
  
  Cifar10: python main_cifar10.py --model MLPBinaryConnect_STE --optim STE
