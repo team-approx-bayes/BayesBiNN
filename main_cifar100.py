@@ -194,7 +194,7 @@ def main():
         val_loader = None
         print('{} train and {} validation datapoints.'.format(len(train_loader.sampler), 0))
 
-    test_dataset = datasets.CIFAR100('./data', train=False, transform=transform_train)
+    test_dataset = datasets.CIFAR100('./data', train=False, transform=transform_test)
     test_loader = torch.utils.data.DataLoader(
         test_dataset,
         batch_size=args.test_batch_size, shuffle=True, **kwargs
