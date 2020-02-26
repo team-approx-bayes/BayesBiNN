@@ -1,4 +1,4 @@
-Code for "Training Binary Neural Networks using the Bayesian Learning Rule".
+Code for paper "Training Binary Neural Networks using the Bayesian Learning Rule". https://arxiv.org/abs/2002.10778 
 
 1. Synthetic data
 
