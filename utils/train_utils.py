@@ -161,10 +161,6 @@ def train_model(args, model, dataloaders, criterion, optimizer, bn_optimizer=Non
 
             # Print Training Progress
             if i % args.log_interval == 0 and i > 0:
-                if args.optim == 'BayesBiNN':
-                    for param_group in optimizer.param_groups:
-                        print('Current temperature is {}!'.format(param_group['temperature']))
-
                 train_accuracy = running_train_correct / running_train_samples
                 train_loss = running_train_loss / running_train_samples
                 print('Iteration[%d]: Train Loss: %f   Train Accuracy: %f ' % (i+1, train_loss, train_accuracy))
