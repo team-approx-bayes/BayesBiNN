@@ -40,7 +40,7 @@ def main():
     parser.add_argument('--test-samples', type=int,default=0, metavar='N',
                         help='number of Monte Carlo samples used in evaluation for BayesBiNN (default: 1), if 0, point estimate using mean'
                              'is applied, which is similar to the Bop optimizer')
-    parser.add_argument('--epochs', type=int, default=100, metavar='N',
+    parser.add_argument('--epochs', type=int, default=500, metavar='N',
                         help='number of epochs to train (default: 10)')
     parser.add_argument('--lr', type=float, default= 1e-4, metavar='LR',
                         help='learning rate (default: 0.0001)')
