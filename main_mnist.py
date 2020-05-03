@@ -52,8 +52,7 @@ def main():
     
     parser.add_argument('--decay-steps', type=int, default=1, metavar='N',
                         help='LR rate decay steps (default: 1)')
-    parser.add_argument('--tp-decay', type=float, default= 1, metavar='LR-decay',
-                        help='temperature decay factor for BayesBiNN optimizer each epoch (default: 0.9)')
+
     parser.add_argument('--momentum', type=float, default=0.0, metavar='M',
                         help='BayesBiNN momentum (default: 0.0)')
     parser.add_argument('--data-augmentation', action='store_true', default=False, help='Enable data augmentation')
@@ -80,11 +79,7 @@ def main():
                         help='linitial std value of the natural parameter lamda(default: 0)')
 
     parser.add_argument('--temperature', type=float, default= 1e-10, metavar='temperature',
-                        help='initial temperature for BayesBiNN (default: 1)')
-
-
-    parser.add_argument('--temp-min', type=float, default= 1e-10, metavar='min temperature',
-                        help='final temperature for BayesBiNN (default: 1)')
+                        help='temperature for BayesBiNN (default: 1e-8)'
 
 
     parser.add_argument('--kl-reweight', type=float, default= 1.0, metavar='min temperature',
