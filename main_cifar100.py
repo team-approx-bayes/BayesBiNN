@@ -88,11 +88,7 @@ def main():
 
 
     parser.add_argument('--temperature', type=float, default= 1e-8, metavar='temperature',
-                        help='initial temperature for BayesBiNN')
-
-
-    parser.add_argument('--temp-min', type=float, default= 1e-8, metavar='min temperature',
-                        help='final temperature for BayesBiNN')
+                        help='temperature for BayesBiNN')
 
    
     parser.add_argument('--bn-affine', type=float, default= 0, metavar='bn-affine',
