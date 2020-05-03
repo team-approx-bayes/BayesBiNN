@@ -15,13 +15,6 @@ def adjust_learning_rate(lr_deacy, optimizer, epoch, step=1):
             param_group['lr'] = param_group['lr'] * lr_deacy
     return
 
-
-def adjust_temperature(optimizer,args):
-    decay_factor  = (args.temp_min/args.temperature)**(1.0/args.epochs)  # learning rate decay factor
-    for param_group in optimizer.param_groups:
-        param_group['temperature'] = np.maximum(param_group['temperature'] * decay_factor, 1e-20) # param_group['temperature'] * tp_deacy
-
-
 def softmax_predictive_accuracy(logits_list, y, criterion, ret_loss=False):
     # this function used to compute the accuracy of average predictions
     probs_list = [logits for logits in logits_list]
@@ -111,9 +104,6 @@ def train_model_cl(args, model, dataloaders, criterion, optimizer,permute_list,t
         opt_scheduler.step()
         if bn_optimizer is not None:
             bn_scheduler.step()
-
-        if args.optim == 'BayesBiNN':
-            adjust_temperature(optimizer,args)
 
         running_train_loss = 0.
         running_train_correct = 0.
