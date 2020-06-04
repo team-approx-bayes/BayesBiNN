@@ -143,7 +143,7 @@ def main():
     train_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform_train)
 
     if args.val_split > 0 and args.val_split < 1:
-        val_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform_train)
+        val_dataset = datasets.MNIST('./data', train=True, download=True, transform=transform_test)
 
         num_train = len(train_dataset)
         indices = list(range(num_train))
