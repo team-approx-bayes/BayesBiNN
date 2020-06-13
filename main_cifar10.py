@@ -49,8 +49,8 @@ def main():
                         help='number of Monte Carlo samples used in evaluation for BayesBiNN (default: 1)')
     parser.add_argument('--epochs', type=int, default=500, metavar='N',
                         help='number of epochs to train (default: 10)')
-    parser.add_argument('--lr', type=float, default= 1e-4, metavar='LR',
-                        help='learning rate (default: 0.0001)')
+    parser.add_argument('--lr', type=float, default= 3e-4, metavar='LR',
+                        help='learning rate (default: 0.0003)')
     parser.add_argument('--lr-end', type=float, default= 1e-16, metavar='LR',
                         help='end learning rate (default: 0.01)')
     parser.add_argument('--lr-decay', type=float, default= 0.9, metavar='LR-decay',
@@ -70,8 +70,8 @@ def main():
     # Computation parameters
     parser.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA training')
-    parser.add_argument('--seed', type=int, default=1, metavar='S',
-                        help='random seed (default: 1)')
+    parser.add_argument('--seed', type=int, default=10, metavar='S',
+                        help='random seed (default: 10)')
 
     parser.add_argument('--lrschedular', type=str, default='Cosine', help='Mstep,Expo,Cosine')
 
