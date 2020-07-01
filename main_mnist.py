@@ -79,7 +79,7 @@ def main():
                         help='linitial std value of the natural parameter lamda(default: 0)')
 
     parser.add_argument('--temperature', type=float, default= 1e-10, metavar='temperature',
-                        help='temperature for BayesBiNN (default: 1e-8)'
+                        help='temperature for BayesBiNN (default: 1e-8)')
 
 
     parser.add_argument('--kl-reweight', type=float, default= 1.0, metavar='min temperature',
